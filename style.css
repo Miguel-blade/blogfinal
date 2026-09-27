@@ -1,0 +1,237 @@
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(181, 181, 204);
+}
+
+nav {
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    /*border-color: red;
+    border-radius: 5px;*/
+    align-content: center;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* si deseo estilizar varios elemento a la vez*/
+header, section, footer, aside, nav, article, hgroup{
+    display: block; /* para colocar todos los elmentos en bloque*/
+}
+
+body{
+    text-align: center;
+    background:gray; /* color de fondo del cuerpo*/
+    width: 940px;
+    border: 1px solid black;
+    margin: 15px auto;
+    /* Aplica 30 px arriba y autoajusta las margenes derecha e izquierda */
+    /*padding: 10px;*/
+}
+
+/* Estilamos el header */
+header{
+    background:#FFFBB9;
+    border: 1px solid #999999;
+    padding: 10px; /* Espacio hacia adentro*/
+    vertical-align: auto;
+}
+
+header h1{
+    text-align:center;
+}
+
+.menu {
+    background:#bdc3c7;
+    padding: 5px 15px; /*espacio arriba y abajo de 5, a los lados de 15px*/
+    text-align: left; /*alinear a la izquierda las opciones*/
+}
+
+.menu li { /*estilizar todo elemento li que esté dentre de una clase menu*/
+    List-style: none; /*quitar los tres punticos del menu*/
+    padding: 5px; /* espacios de 5px entre cada opcion*/
+    font:bold 12px verdana;
+    border: 1px solid black;/* bordes de las opciones*/
+    display: inline-block; /*ubicar en linea horizontal las opciones*/
+}
+
+.seccion {
+    width: 600px; /* Ancho del area del html, dejar espacio para los ASIDE*/
+    margin: 20px;
+    /*border:1px solid black;*/
+    float:left; /* se incluye para que la sección flote y al flotar se salga del*/
+}
+
+article {
+    background: #fffbcc;
+    /*darle fondo alos articulos*/
+    border: 1px solid #999;
+    margin-bottom: 15px; /*separar los articulos*/
+}
+
+time {
+    color: #999;
+}
+
+article footer{ /* estilizar todos los pie de pagina que estén dentro de un art*/
+    text-align: right; /* alinea los comentarios*/
+} 
+
+.columna {
+    width: 300px; /* ancho del aside*/
+    /*border: 1px solid black;*/
+    float:left; /* se incluye para que el aside flote y al flota se sale del ma*/
+    margin:20px 0px; /* alinear el aside con el seccion por la parte superior*/
+    /*Estilizar los dos mensajes*/
+}
+
+.columna blockquote{
+    /*border: 1px solid black;*/
+    /*border: 1px dashed black; /*Bordes punteados*/
+    border: 0px solid black;
+    padding: 40px;
+    background: #FFFB89;
+}
+
+.pie{
+    clear: both; /* volver a la posición normal el ASIDE*/
+    padding: 20px;
+    background: #2d3436;
+    color: #ffffff;
+    /* Estilizar el logotipo*/
+}
+
+img{
+    width: 200px; /*estiizar el ancho de la imagen a 200 px*/
+    display: block; /* al mover el logo, se coloca lineal al frente de publi*/
+    margin: auto; /*ubica el logo en el centro.*/
+    height: 140px;
+}
+
+/* Fuente más tierna y fondo del sitio */
+body {
+    background-color: #faf3f5; /* Rosa muy pálido */
+    border: 3px solid #ffd1dc; /* Borde de la caja principal en rosa pastel */
+    border-radius: 25px;       /* Bordes muy redondos */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    color: #595959; /* Texto gris suave, como Pusheen */
+    font-family: 'Quicksand', 'Arial Rounded MT Bold', sans-serif; /* Fuentes más redondeadas si están disponibles */
+}
+
+/* Encabezado: Color Menta pastel */
+header {
+    background-color: #c1ebd2; 
+    border: none;
+    border-radius: 20px 20px 0 0; /* Solo redondea arriba */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Títulos con estilo de calcomanía */
+h1 {
+    color: #66b2b2;
+    border: 3px dashed #fff;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+    color: #ff9eaa;
+}
+
+/* Menú principal: Rosa pastel */
+nav.menu {
+    background-color: #ffb6c1; 
+    border: none;
+    text-align: center; 
+}
+
+/* Botones del menú interactivos */
+.menu li {
+    background-color: #fff;
+    border: 2px solid #ff9eaa;
+    border-radius: 15px;
+    color: #595959;
+    padding: 8px 20px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(255, 182, 193, 0.4);
+}
+
+.menu li:hover {
+    background-color: #c1ebd2; /* Se vuelve menta al pasar el mouse */
+    border-color: #a0d8b5;
+    color: #fff;
+    transform: scale(1.1) rotate(-3deg); /* Efecto de salto tierno */
+    cursor: pointer;
+}
+
+/* Artículos (Publicaciones) */
+article {
+    background-color: #ffffff;
+    border: 2px solid #f0e6e8;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    padding: 20px;
+}
+
+/* Estilo para las imágenes dentro de los artículos para que parezcan fotos instantáneas */
+article img {
+    border-radius: 15px;
+    border: 5px solid #ffb6c1;
+    height: auto;
+    width: 80%; /* Ajuste para que no se salga del artículo */
+}
+
+/* Globos de texto en la barra lateral */
+.columna blockquote {
+    background-color: #d4f0f0; /* Azul hielo pastel */
+    border-radius: 25px 25px 25px 5px; /* Forma de burbuja de chat de cómic */
+    border: none;
+    font-style: italic;
+    color: #4a4a4a;
+    position: relative;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #a0d8b5; /* Menta un poco más oscuro */
+    border-radius: 0 0 20px 20px; /* Redondea solo abajo */
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Enlaces */
+a {
+    color: #ff9eaa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #66b2b2;
+    text-decoration: underline dashed;
+}
